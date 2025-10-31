@@ -5,6 +5,7 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import PrivateRoute from "./routes/PrivateRoute";
 import TaskDashboard from "./pages/TaskDashboard";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
         {/* Catch all unmatched routes */}
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
+
+      <Footer />
     </>
   );
 }
